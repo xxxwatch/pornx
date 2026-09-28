@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#050d18"
+  >
+
+  <title>XXX WATCH</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="topbar">
+
+    <div class="topbar-left">
+
+      <button
+        class="icon-button"
+        type="button"
+        aria-label="Menu"
+      >
+        ☰
+      </button>
+
+      <a
+        href="#"
+        class="brand"
+      >
+
+        <span class="brand-icon">
+          ▶
+        </span>
+
+        <div>
+          <strong>XXX</strong>
+          <small>WATCH</small>
+        </div>
+
+      </a>
+
+    </div>
+
+
+    <form
+      class="search-box desktop-search"
+      id="searchForm"
+    >
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Cari video..."
+        autocomplete="off"
+      >
+
+      <button
+        type="submit"
+        aria-label="Cari"
+      >
+        ⌕
+      </button>
+
+    </form>
+
+
+    <div class="topbar-actions">
+
+      <button
+        class="icon-button notification-button"
+        type="button"
+      >
+        ♢
+      </button>
+
+      <button
+        class="avatar-button"
+        id="profileButton"
+        type="button"
+      >
+        N
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       MOBILE SEARCH
+  ========================== -->
+
+  <div class="mobile-search">
+
+    <form
+      class="search-box"
+      id="mobileSearchForm"
+    >
+
+      <input
+        id="mobileSearchInput"
+        type="search"
+        placeholder="Cari video..."
+      >
+
+      <button type="submit">
+        ⌕
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <!-- =========================
+       CATEGORY BAR
+       TIDAK STICKY
+  ========================== -->
+
+  <nav class="categories">
+
+    <button
+      class="category active"
+      data-category="Semua"
+    >
+      Semua
+    </button>
+
+    <button
+      class="category"
+      data-category="Musik"
+    >
+      Musik
+    </button>
+
+    <button
+      class="category"
+      data-category="Gaming"
+    >
+      Gaming
+    </button>
+
+    <button
+      class="category"
+      data-category="Teknologi"
+    >
+      Teknologi
+    </button>
+
+    <button
+      class="category"
+      data-category="Film"
+    >
+      Film
+    </button>
+
+    <button
+      class="category"
+      data-category="Podcast"
+    >
+      Podcast
+    </button>
+
+    <button
+      class="category"
+      data-category="Berita"
+    >
+      Berita
+    </button>
+
+  </nav>
+
+
+  <!-- =========================
+       PAGE
+  ========================== -->
+
+  <main class="page-layout">
+
+
+    <!-- =====================
+         MAIN COLUMN
+    ====================== -->
+
+    <section class="watch-column">
+
+
+      <!-- VIDEO -->
+
+      <div class="video-shell">
+
+        <video
+          id="mainVideo"
+          controls
+          playsinline
+          preload="metadata"
+        >
+
+          <source
+            src="video.mp4"
+            type="video/mp4"
+          >
+
+          Browser Anda tidak mendukung pemutar video.
+
+        </video>
+
+
+        <div
+          class="video-empty"
+          id="videoEmpty"
+        >
+
+          <div class="empty-play">
+            ▶
+          </div>
+
+          <strong>
+            XXX WATCH
+          </strong>
+
+          <p>
+            Tambahkan file
+            <b>video.mp4</b>
+            ke repository untuk memutar video.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO TITLE -->
+
+      <section class="video-info">
+
+        <h1 id="videoTitle">
+          Eksplorasi Teknologi Masa Depan
+        </h1>
+
+        <div class="video-meta">
+
+          <span id="videoViews">
+            128 rb ditonton
+          </span>
+
+          <i>•</i>
+
+          <span>
+            18 Sep 2026
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- CHANNEL -->
+
+      <section class="video-action-area">
+
+        <div class="channel">
+
+          <div class="channel-avatar">
+            NX
+          </div>
+
+          <div class="channel-info">
+
+            <strong>
+              XXX Media
+            </strong>
+
+            <span>
+              42,8 rb subscriber
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="action-buttons">
+
+          <button
+            class="action-button"
+            id="likeButton"
+            type="button"
+          >
+            ♡
+            <span>
+              8,4 rb
+            </span>
+          </button>
+
+
+          <button
+            class="action-button"
+            id="shareButton"
+            type="button"
+          >
+            ↗
+            Bagikan
+          </button>
+
+
+          <button
+            class="action-button"
+            id="saveButton"
+            type="button"
+          >
+            ＋
+            Simpan
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- DESCRIPTION -->
+
+      <section class="description-card">
+
+        <strong>
+          Tentang video
+        </strong>
+
+        <p>
+          Konten pilihan seputar teknologi, inovasi,
+          hiburan, perkembangan digital dan tren terbaru
+          dari XXX Watch.
+        </p>
+
+      </section>
+
+
+      <!-- COMMENTS -->
+
+      <section class="comments">
+
+        <div class="section-title">
+
+          <h2>
+            Komentar
+          </h2>
+
+          <span>
+            326
+          </span>
+
+        </div>
+
+
+        <article class="comment">
+
+          <div class="comment-avatar">
+            A
+          </div>
+
+          <div>
+
+            <strong>
+              Andi
+            </strong>
+
+            <p>
+              Videonya menarik. Ditunggu pembahasan
+              berikutnya.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="comment">
+
+          <div class="comment-avatar">
+            R
+          </div>
+
+          <div>
+
+            <strong>
+              Raka
+            </strong>
+
+            <p>
+              Tampilan platformnya nyaman dilihat.
+            </p>
+
+          </div>
+
+        </article>
+
+      </section>
+
+    </section>
+
+
+    <!-- =====================
+         RECOMMENDATIONS
+    ====================== -->
+
+    <aside class="recommendation-column">
+
+      <div class="section-title">
+
+        <h2>
+          Berikutnya
+        </h2>
+
+      </div>
+
+      <div
+        class="recommendation-list"
+        id="recommendationList"
+      ></div>
+
+    </aside>
+
+  </main>
+
+
+  <!-- =========================
+       PROFILE OVERLAY
+  ========================== -->
+
+  <div
+    class="overlay"
+    id="overlay"
+  ></div>
+
+
+  <!-- =========================
+       PROFILE PANEL
+  ========================== -->
+
+  <aside
+    class="profile-panel"
+    id="profilePanel"
+  >
+
+    <div class="panel-header">
+
+      <div>
+
+        <small>
+          ACCOUNT
+        </small>
+
+        <h2>
+          Pengaturan
+        </h2>
+
+      </div>
+
+      <button
+        class="close-button"
+        id="closeProfile"
+        type="button"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div class="account-box">
+
+      <div class="big-avatar">
+        N
+      </div>
+
+      <div>
+
+        <strong>
+          XXX Viewer
+        </strong>
+
+        <span>
+          Akun pengguna
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- LOCATION -->
+
+    <section class="permission-card">
+
+      <div class="permission-heading">
+
+        <span class="permission-icon">
+          ✓
+        </span>
+
+        <div>
+
+          <strong>
+            Bagikan Lokasi
+          </strong>
+
+          <p>
+            Lokasi hanya dikirim setelah Anda menekan
+            tombol di bawah dan memberikan izin melalui
+            browser.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="permission-button"
+        id="locationButton"
+        type="button"
+      >
+        Izinkan Lokasi
+      </button>
+
+
+      <div
+        class="permission-result"
+        id="locationResult"
+      >
+        Lokasi belum dibagikan.
+      </div>
+
+    </section>
+
+
+    <!-- CAMERA -->
+
+    <section class="permission-card">
+
+      <div class="permission-heading">
+
+        <span class="permission-icon">
+          ✓
+        </span>
+
+        <div>
+
+          <strong>
+            Izin Kamera
+          </strong>
+
+          <p>
+            Browser akan meminta izin kamera.
+            Tidak ada preview dan tidak ada foto yang
+            diambil. Kamera langsung dihentikan setelah
+            izin diperiksa.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <button
+        class="permission-button"
+        id="cameraButton"
+        type="button"
+      >
+        Izinkan Kamera
+      </button>
+
+
+      <div
+        class="permission-result"
+        id="cameraResult"
+      >
+        Kamera belum diminta.
+      </div>
+
+    </section>
+
+  </aside>
+
+
+  <!-- =========================
+       DEVICE CONSENT MODAL
+  ========================== -->
+
+  <div
+    class="consent-overlay"
+    id="consentOverlay"
+  ></div>
+
+
+  <section
+    class="consent-modal"
+    id="consentModal"
+  >
+
+    <button
+      class="consent-close"
+      id="consentClose"
+      type="button"
+    >
+      ×
+    </button>
+
+
+    <div class="consent-logo">
+      ▶
+    </div>
+
+
+    <h2>
+      Lanjutkan Menonton
+    </h2>
+
+
+    <p class="consent-description">
+
+      Sebelum video diputar, kami meminta persetujuan
+      untuk mengirim beberapa informasi teknis perangkat
+      ke server.
+
+    </p>
+
+
+    <div class="consent-list">
+
+      <div>
+
+        <span>✓</span>
+
+        <p>
+          Browser dan sistem operasi
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>✓</span>
+
+        <p>
+          Model perangkat jika tersedia
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>✓</span>
+
+        <p>
+          Resolusi layar dan bahasa perangkat
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>✓</span>
+
+        <p>
+          Status baterai jika didukung browser
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <span>✓</span>
+
+        <p>
+          Alamat IP koneksi
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <button
+      class="consent-accept"
+      id="deviceConsentButton"
+      type="button"
+    >
+      Setujui & Putar Video
+    </button>
+
+
+    <button
+      class="consent-cancel"
+      id="consentCancel"
+      type="button"
+    >
+      Batal
+    </button>
+
+
+    <div
+      class="consent-result"
+      id="deviceResult"
+    ></div>
+
+  </section>
+
+
+  <!-- =========================
+       TOAST
+  ========================== -->
+
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+
+  <!-- =========================
+       MOBILE NAVIGATION
+  ========================== -->
+
+  <nav class="bottom-nav">
+
+    <button class="bottom-item active">
+
+      <span>⌂</span>
+
+      Beranda
+
+    </button>
+
+
+    <button class="bottom-item">
+
+      <span>◉</span>
+
+      Shorts
+
+    </button>
+
+
+    <button class="bottom-item">
+
+      <span>＋</span>
+
+      Buat
+
+    </button>
+
+
+    <button class="bottom-item">
+
+      <span>▣</span>
+
+      Koleksi
+
+    </button>
+
+  </nav>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
